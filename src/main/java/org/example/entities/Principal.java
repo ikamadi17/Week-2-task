@@ -1,4 +1,6 @@
-package org.example;
+package org.example.entities;
 
-public class Principal {
-}
+import java.math.BigDecimal;
+public abstract class Principal extends Staff{
+
+        }
