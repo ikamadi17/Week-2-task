@@ -1,4 +1,5 @@
 package org.example.entities;
 
-public enum Gender {Male, Female
-}
+public enum gender {
+    Male, Female
+};

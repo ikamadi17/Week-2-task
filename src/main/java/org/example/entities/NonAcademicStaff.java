@@ -1,40 +1,42 @@
 package org.example.entities;
 
 import java.math.BigDecimal;
-public abstract class NonAcademicStaff {
 
-    private String name;
-    public String getName() {
-        return name;
+public class NonAcademicStaff extends Staff{
+    private String ContractList;
+    private String roles;
+
+    public NonAcademicStaff(String firstName, String lastName, int idNo, BigDecimal dateOfBirth, int age, String gender, String homeAddress, Long contactPhoneNumber, String emailAddress, String nextOfKin, int staffId, String staffQualification, String role, String contractList, String roles) {
+        super(firstName, lastName, idNo, dateOfBirth, age, gender, homeAddress, contactPhoneNumber, emailAddress, nextOfKin, staffId, staffQualification, role);
+        ContractList = contractList;
+        this.roles = roles;
+
     }
 
-    private int age;
-    public int getAge() {
-        return age;
+    public String getContractList() {
+        return ContractList;
     }
 
-    private String gender;
-    public String getGender() {
-        return gender;
-    }
-    private BigDecimal dateOfAppointment;
-    public BigDecimal getDateOfAppointment() {
-        return dateOfAppointment;
+    public void setContractList(String contractList) {
+        ContractList = contractList;
     }
 
-    private int level;
-    public int getLevel() {
-        return level;
-    }
-    private String nextOfKin;
-
-    public String getNextOfKin() {
-        return nextOfKin;
+    public String getRoles() {
+        return roles;
     }
 
-    private String role;
-    public String getRole() {
-        return role;
+    public void setRoles(String roles) {
+        this.roles = roles;
     }
 
+    @Override
+    public String toString() {
+        return "NonAcademicStaff{" +
+                "ContractList='" + ContractList + '\'' +
+                ", roles='" + roles + '\'' +
+                ", contactPhoneNumber=" + contactPhoneNumber +
+                ", emailAddress='" + emailAddress + '\'' +
+                ", nextOfKin='" + nextOfKin + '\'' +
+                '}';
+    }
 }
