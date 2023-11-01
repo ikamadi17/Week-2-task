@@ -1,4 +1,4 @@
-package org.example;
+package org.example.User;
 import java.math.BigDecimal;
 import lombok.*;
 @Data
@@ -20,6 +20,9 @@ public class User {
     private String isArchived;
     private String isDeleted;
     private String gradeLevel;
+
+    public User(String firstName, String lastName, int idNo, BigDecimal dateOfBirth, int age, String gender, String homeAddress, Long contactPhoneNumber, String emailAddress, String nextOfKin) {
+    }
     private BigDecimal dateOfBirth;
     private int age;
     private String Gender;
@@ -30,11 +33,10 @@ public class User {
 
 }
 
-
     /*public User(String firstName, String lastName, int idNo, BigDecimal dateOfBirth, int age, String gender, String homeAddress, Long contactPhoneNumber, String emailAddress, String nextOfKin) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.idNo = String.valueOf(idNo);
+        this.idNo = idNo;
         this.dateOfBirth = dateOfBirth;
         this.age = age;
         Gender = gender;
@@ -49,7 +51,7 @@ public class User {
         return firstName;
     }
 
-    public static void setFirstName(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
@@ -57,15 +59,15 @@ public class User {
         return lastName;
     }
 
-    public static void setLastName(String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public String getIdNo() {
+    public int getIdNo() {
         return idNo;
     }
 
-    public static void setIdNo(String idNo) {
+    public void setIdNo(int idNo) {
         this.idNo = idNo;
     }
 
@@ -113,7 +115,7 @@ public class User {
         return emailAddress;
     }
 
-    public static void setEmailAddress(String emailAddress) {
+    public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
     }
 
@@ -138,4 +140,4 @@ public class User {
                 ", contactPhoneNumber=" + contactPhoneNumber +
                 ", emailAddress='" + emailAddress + '\'' +
                 ", nextOfKin='" + nextOfKin + '\'' +
-                '}'*/
+                '}'; */

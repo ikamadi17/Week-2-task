@@ -1,4 +1,4 @@
-package org.example;
+package org.example.entities;
 import java.math.BigDecimal;
 import lombok.*;
 @Data
